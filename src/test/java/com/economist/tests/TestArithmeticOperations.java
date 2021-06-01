@@ -7,8 +7,10 @@ import com.economist.arithmetic.ArithmeticOperations;
 
 public class TestArithmeticOperations {
 	
-	@Test(enabled=true)
+	@Test(enabled=true)		//to disable the test, change the value to false i.e. enabled=false
 	public void testAddition() {
+		//calling methods to get the result as actual value and then performing assertion
+		
 		Assert.assertEquals(ArithmeticOperations.add(16,8), 24);
 		Assert.assertEquals(ArithmeticOperations.add(2.41,8.82), 11.23);
 		Assert.assertEquals(ArithmeticOperations.add(-3,-4), -7);
